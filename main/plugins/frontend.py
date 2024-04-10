@@ -29,11 +29,11 @@ async def clone(event):
             return
     except TypeError:
         return
-    s, r = await force_sub(event.client, fs, event.sender_id, ft)
+#     s, r = await force_sub(event.client, fs, event.sender_id, ft)
 #     if s == True:
-    if True:
-        await event.reply(r)
-        return
+#     if True:
+#         await event.reply(r)
+#         return
     edit = await event.reply("Processing!")
     try:
         if 't.me/+' in link:

@@ -38,7 +38,8 @@ async def _batch(event):
     if not event.is_private:
         return
     s, r = await force_sub(event.client, fs, event.sender_id, ft) 
-    if s == True:
+#     if s == True:
+    if  True:
         await event.reply(r)
         return       
     if event.sender_id in batch:

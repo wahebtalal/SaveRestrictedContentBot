@@ -30,7 +30,8 @@ async def clone(event):
     except TypeError:
         return
     s, r = await force_sub(event.client, fs, event.sender_id, ft)
-    if s == True:
+#     if s == True:
+    if True:
         await event.reply(r)
         return
     edit = await event.reply("Processing!")
